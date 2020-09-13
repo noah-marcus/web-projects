@@ -1,0 +1,390 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** My Code **/
+body{
+    font-family: "Courier New";
+    text-align: justify;
+    color: #62B512;
+    background-image: url("images/apple_mac_os_x_el_capitan-wide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-wrapper{
+    padding: 10px;
+    margin: auto;
+}
+
+header{
+/*    width: 100%;*/
+    background-image: url(images/top.svg);
+    background-repeat: no-repeat;
+/*    backgrouxnd-size: 100%;*/
+}
+
+header h1{
+    padding-top: 10px;
+    width: 8.5em;
+}
+
+header, .summary, .preamble, .explanation, .participation, .benefits, .requirements , .design-archives, .design-selection{
+    background-color: #070707;
+    padding: 10px;
+    display:block;
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    vertical-align: text-top;
+    align-items: center;
+    
+}
+
+.summary p{
+    margin-top: 10px;
+    width: 90%;
+}
+
+ .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .design-selection h3, .design-archives h3{
+    width: 90%;
+    border-top: 2px dashed #235623;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-transform: lowercase;
+}
+
+.preamble p, .explanation p, .participation p, .benefits p, .requirements p, .design-archives p{
+    padding: 8px 0px;
+    width: 90%;
+}
+
+.design-archives ul li{
+    display: inline;
+    margin: 5px;
+}
+
+a{
+/*    text-decoration: none;*/
+    color: #EFF272;
+}
+
+a:visitied{
+/*    text-decoration: none;*/
+    color: #EFF272;
+}
+
+.design-selection ul{
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    
+}
+.design-selection ul li{
+    margin: 7px;
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+}
+.design-name{
+    color: #EFF272;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.design-name:visited{
+    color: #EFF272;
+    text-decoration: none;
+}
+
+.designer-name{
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.designer-name:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+header h1{
+    font-size: 60px;
+    font-weight: 800;
+    padding-top: 0px;
+    height: 51px;
+/*    height: 30px;*/
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .30em solid #62B512; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin-top: 30px;
+/*    letter-spacing: .15em;  Adjust as needed */
+    animation: 
+        typing 2.5s steps(44) 1s 1 normal both,
+        blink-caret .6s steps(44) infinite normal;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from{width: 0;}
+  to{width: 8.5em;}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from{border-right-color: #62B512;}
+  to{border-right-color: transparent;}
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+h3{
+    color: #0280C6;
+    font-size: 20px;
+}
+
+p{
+    font-size: 15px;
+}
+
+footer{
+    position: fixed;
+    right: -142px;
+    top: 50vh;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg); /* Standard syntax */
+    width: 350px;
+    height: 75px;
+    background-color: #AFAFA8;
+    opacity: .9;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+footer a{
+    transition: all .2s;
+    
+}
+
+.zen-validate-html{
+    text-indent: -999px;
+    background-image: url(images/html.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+.zen-validate-css{
+    text-indent: -999px;
+    background-image: url(images/css.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+.zen-license{
+    text-indent: -999px;
+    background-image: url(images/cc.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+.zen-accessibility{
+    text-indent: -999px;
+    background-image: url(images/acc.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+.zen-github{
+    text-indent: -999px;
+    background-image: url(images/gh.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+footer a:hover{
+    width: 70px;
+    height: 70px;
+}
+
+#zen-resources h3{
+    display: none;
+}
+
+#zen-resources ul{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around; 
+}
+
+#zen-resources ul li a{
+    background-image: url(images/folder.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+    width: 100px;
+    float: left;
+
+    
+    text-decoration: none;
+    font-family: "Futura";
+    color: white;
+    font-size: 12px;
+    
+    text-align: center;
+    margin: 10px;
+}
+
+#zen-resources ul li a:visited{
+    background-image: url(images/folder.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+    width: 100px;
+    float: left;
+
+    
+    text-decoration: none;
+    font-family: "Futura";
+    color: white;
+    font-size: 12px;
+    
+    text-align: center;
+}
+
+
+@media screen and (max-width: 650px){
+    footer a{
+        display: none;
+    }
+    footer{
+       background-color: transparent;
+    }
+    
+
+    header h1{
+        padding-top: 10px;
+        font-size: 40px;
+    }
+
+    header, .summary, .preamble, .explanation, .participation, .benefits, .requirements , .design-selection, .design-archives{
+        background-color: #070707;
+/*        padding: 10px;*/
+        display:block;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        vertical-align: text-top;
+        align-items: center;
+        padding: 0px;
+
+    }
+
+    .summary p{
+        margin-top: 10px;
+        width: 80%;
+    }
+
+     .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .design-selection h3, .design-archives h3{
+/*        width: 100%;*/
+        border-top: 2px dashed #235623;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        text-transform: lowercase;
+    }
+
+    .preamble p, .explanation p, .participation p, .benefits p, .requirements p, .design-archives p{
+        padding: 8px 0px;
+/*        width: 100%;*/
+    }
+
+   
+    #zen-resources ul li a{
+        margin: 10px;
+       
+    }
+    #zen-resources ul{
+        flex-wrap: wrap;
+    }
+    
+    .page-wrapper{
+        padding: 0px;
+    }
+    
+    header h1{
+        animation: 
+            typing 2s steps(44) 1s 1,
+            blink-caret .6s steps(44) infinite normal;
+    }
+    
+}
+
+
