@@ -1,15 +1,11 @@
 # web-projects
 various web projects from university
 
-============
 ## Contents
-============
 - Overview
 - How to Run 
 
-=============
 ## Overview
-=============
 
 At Lehigh University, I took two Web Design classes
 that were offered by our design school, not through
@@ -46,9 +42,7 @@ that looked like it used a template, but to do it all from
 scratch. I made it grow and shrink to phone, tablet, and 
 computer size with tedious css, all in the name of ~learning~.
 
-=============
 ## How to Run
-============= 
 For simplicity, clone this repo, navigate to the folder, and
 open the index.html file with your browser of choice. 
 Unfortunatley, the website I used to host these has since 
